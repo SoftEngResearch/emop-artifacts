@@ -1,6 +1,6 @@
 # TODOs
 
-- [ ] Put the processed VMS results
+- [x] Put the processed VMS results
 - [x] Have
   - [x] the list of projects
   - [x] the SHAs that we used

@@ -12,3 +12,5 @@ We have prepared the following artifacts:
   * `all_violations`: The sum of all violations, new and old combined, across all commits of the project
 * `project_revisions`: A directory that contains file in the following format:
   * `${project_name}.txt`: A file that contains all the SHA hash values of a GitHub project's commits that we used in our evaluation. Lines that start with `#` represent commits that are not able to be evaluated upon because of various failures as commented next to them
+* `appendix.pdf`: Appendix of the paper. Contains various plots of the results of different configurations for selected projects
+

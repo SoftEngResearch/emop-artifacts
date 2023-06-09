@@ -13,4 +13,5 @@ We have prepared the following artifacts:
 * `project_revisions`: A directory that contains file in the following format:
   * `${project_name}.txt`: A file that contains all the SHA hash values of a GitHub project's commits that we used in our evaluation. Lines that start with `#` represent commits that are not able to be evaluated upon because of various failures as commented next to them
 * `appendix.pdf`: Appendix of the paper. Contains various plots of the results of different configurations for selected projects
+* `small-project-wrapper.sh`: A script that demonstrates how the experiment w.r.t. one project is done. Other projects can be run in a similar manner
 

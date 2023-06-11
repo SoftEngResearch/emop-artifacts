@@ -26,8 +26,16 @@ echo "[$0] Cleaning..."
 bash ${SCRIPT_DIR}/clean.sh
 
 if [ "${MODE}" == "one" ]; then
-    echo "[$0] Running RPS-RPP-VMS on ${NUM_SHAS} SHAs..."
+    echo "[$0] Running RPS with PS3 on ${NUM_SHAS} SHAs..."
     bash ${SCRIPT_DIR}/run_experiment.sh ${PROJECT_URL} ${SCRIPT_DIR}/project_revisions/${PROJECT_NAME}.txt ${NUM_SHAS} nostats rps 3 true true
 else
-    echo "ALL modes not yet implemented"
+    echo "[$0] Running RPS with MOP and all variants on ${NUM_SHAS} SHAs..."
+    bash ${SCRIPT_DIR}/run_experiment.sh ${PROJECT_URL} ${SCRIPT_DIR}/project_revisions/${PROJECT_NAME}.txt ${NUM_SHAS} mop
+    for ps in 1 2 3
+              for library in false true; do
+                  for non_affected in false true; do
+                          bash ${SCRIPT_DIR}/run_experiment.sh ${PROJECT_URL} ${SCRIPT_DIR}/project_revisions/${PROJECT_NAME}.txt ${NUM_SHAS} nostats rps ${ps} ${library} ${non_affected}
+                  done
+        done
+    done
 fi

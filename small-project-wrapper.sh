@@ -1,4 +1,4 @@
 (
     cd scripts
-    bash small-project-wrapper.sh 2
+    bash run-single-project.sh 2
 )

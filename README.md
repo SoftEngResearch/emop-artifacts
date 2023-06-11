@@ -32,5 +32,7 @@ The scripts that we provide have only been tested on PCs running Ubuntu 20.4, Ja
 
   * `bash run-one-project.sh all` will run JavaMOP and RPS on two SHAs of the project using all RPS variants
 
+* `run-all-projects.sh`: A script to run our experiments on all projects. However, since the setup in this repository is different from when we were running the evaluation, be aware that this operation will take a very long time. The two modes of running are exactly like those for `run-one-project.sh`
+
 * After running scripts with any of the commands above, the results will be in CSV files stored in the `scripts/results` directory
 

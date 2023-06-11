@@ -242,18 +242,19 @@ function print_emop_record_header {
     local affected_klas_indicator=$4
     local project_version=$5
     local variant="ps${ps_variant}${affected_klas_indicator}${lib_indicator}"    
+    # Please do not indent this!
     echo "SHA,${variant} (s),\
-            ${variant}#violations,\
-            ${variant}#unique,\
-            ${variant}#specs,\
-            ${variant}#impactedClasses,\
-            ${variant} ImpactedClasses(ms),\
-            ${variant} compile-time weaving (ms),\
-            ${variant} process message (ms),\
-            ${variant} write specs to disk (ms),\
-            ${variant} change aop-ajc.xml (ms),\
-            ${variant}#monitors,\
-            ${variant}#events" >> ${result_file}
+${variant}#violations,\
+${variant}#unique,\
+${variant}#specs,\
+${variant}#impactedClasses,\
+${variant} ImpactedClasses(ms),\
+${variant} compile-time weaving (ms),\
+${variant} process message (ms),\
+${variant} write specs to disk (ms),\
+${variant} change aop-ajc.xml (ms),\
+${variant}#monitors,\
+${variant}#events" >> ${result_file}
 }
 
 function print_emop_record_body {

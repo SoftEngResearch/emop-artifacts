@@ -203,7 +203,7 @@ function run_single_experiment {
 	      # Write at the end of an execution cycle
 
 	      print_emop_record_body ${project_data_root}/${variant}-results.csv ${project_data_root} ${version} ${RUN_TYPE} ${PS} ${library_indicator} ${non_affected_indicator}
-	      echo "" >> ${project_data_root}/results.csv
+	      # echo "" >> ${project_data_root}/results.csv
 
 	      # Copy the results over for easier views
 	      mkdir -p ${EXPERIMENT_ROOT}/results

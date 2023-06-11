@@ -167,6 +167,7 @@ function run_single_experiment {
           if [ ${RUN_TYPE} = 'test' ]; then
 	      run_mvn_test ${project_name} "test" ${data_path}/test-log.txt
           elif [ ${RUN_TYPE} = 'mop' ]; then
+              run_mvn_test ${project_name} "test" ${data_path}/test-log.txt
               run_mvn_test ${project_name} "mop" ${data_path}/mop-log.txt
 	      if [ -f violation-counts ]; then
                   mv violation-counts ${data_path}/mop-violation-counts

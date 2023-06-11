@@ -1,13 +1,10 @@
 if [ $# -lt 1 ]; then
-    echo "USAGE: bash $0 RESULT_DIR [NUM_SHAS]"
-    echo "where RESULT_DIR is the root directory of the emop-paper repo to write results to"
-    echo "if RESULT_DIR is not a directory path containing rv-2023 subdirectory, then results will not be written."
+    echo "USAGE: bash $0 [NUM_SHAS]"
     echo "[NUM_SHAS] is an optional argument providing the number of SHAs to run the smallest project on"
     exit
 fi
 
-RESULT_DIR=$1
-NUM_SHAS=$2
+NUM_SHAS=$1
 
 if [ "${NUM_SHAS}" == "" ]; then
     echo "No option provided, running with 2 SHAS..."

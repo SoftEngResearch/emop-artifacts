@@ -1,6 +1,5 @@
 (
-    git clone https://github.com/SoftEngResearch/emop-experiments
-    cd emop-experiments
+    cd scripts
     mkdir tmp
-    bash small-project-wrapper.sh tmp
+    bash small-project-wrapper.sh 2
 )

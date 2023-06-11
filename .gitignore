@@ -1,2 +1,5 @@
 *.DS_Store
-emop-experiments
+scripts/experiment-projects
+scripts/results
+scripts/env-*
+scripts/data

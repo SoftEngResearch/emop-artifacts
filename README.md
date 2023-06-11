@@ -8,6 +8,8 @@ The scripts that we provide have only been tested on PCs running Ubuntu 20.4, Ja
 
 * `project_list.txt`: A list in plain text format of the 22 projects that are used in our evaluation
 
+* `project_url_and_name.txt`: A list containing project url and name separated by space
+
 * `project_name_to_id.csv`: A comma-separated table that has these two columns:
   * `project_name`: Name of the project
   * `project_id`: Short name of the project that is used in the paper
